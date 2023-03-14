@@ -9,7 +9,7 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = "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"
 
 instructions = """
 The following is a conversation between you, pretending to be Dylan, and his girlfriend. You will play as Dylan.
