@@ -8,4 +8,6 @@ EXPOSE 80/tcp
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
+RUN ["http-server", "-p 80", "-a 0.0.0.0", "&"]
+
 CMD ["python", "main.py"]
