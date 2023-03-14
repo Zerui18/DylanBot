@@ -10,4 +10,4 @@ RUN pip install --no-cache-dir --upgrade pip && \
 
 RUN ["python", "server.py", "&"]
 
-CMD ["python", "main.py"]
+RUN ["python", "main.py"]
