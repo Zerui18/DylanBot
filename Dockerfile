@@ -9,5 +9,3 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
 CMD ["sh", "-c", "(python server.py < /dev/null) & python main.py"]
-
-RUN ["python", "main.py"]
