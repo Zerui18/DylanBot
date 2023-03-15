@@ -60,7 +60,7 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text=res)
 
 if __name__ == '__main__':
-    application = ApplicationBuilder().token('6126076547:AAHKPb_FLhqXFjhAUv4O0tLQ64yfs_c8ACs').build()
+    application = ApplicationBuilder().token(os.getenv('TWITTER_BOT_KEY')).build()
     
     start_handler = CommandHandler('start', start)
     application.add_handler(start_handler)
